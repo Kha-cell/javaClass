@@ -6,7 +6,7 @@ import java.util.Scanner;
     while(count <=3) {
      
 
-     System.out.print("Enter a number");
+     System.out.print("Enter a number:  ");
      int number = input.nextInt();
    
      int num = 0;

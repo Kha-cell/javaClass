@@ -19,39 +19,22 @@ public class StudentGrade {
 
         	int[][] scores = new int[numberOfStudents][numberOfSubjects];
 
-       	 for (int i = 0; i < numberOfStudents; i++) {
-           	 System.out.println("Enter scores for student " + (i + 1) + ":");
-          	  for (int f = 0; f < numberOfSubjects; f++) {
-            	System.out.print("scores for subject " + (f + 1) + ": ");
-   		scores[i][f] = input.nextInt();
-	}
-     
+ for (int i = 0; i < numberofstudent; i++) {
+            System.out.println("Enter scores for student " + (i + 1) + ":");
+            for (int j = 0; j < numberofsubject; j++) {
+                while (true) {
+                    System.out.print("Subject " + (j + 1) + ": ");
+                    int score = input.nextInt();
+                    if (score >= 0 && score <= 100) {
+                        scores[i][j] = score;
+                        break;
+                    } else {
+                        System.out.println("Score must be between 0 and 100. Please enter again.");
+                    }
+      
+          }
+
       }
-	System.out.println("\nStudent Scores: ");
-	for(int i = 0; i < numberOfStudents; i++) {
-		System.out.println("Scores for student " + (i +1) + ":");
-		for(int f = 0; f < numberOfSubjects; f++)  {
-		  do {
-		  System.out.print(Scores for student " + (f + 1) + "(0-100): ");   			score = input.nextInt();
-			if(score < 0 && score > 100) {
-			   System.out.println("out of score range!!!");
-		
-
-
-
     }
-
-}  while (score > 0 && score < 100);
- 	score[i][f] = score;
-   }
-}
-
-
-
-
-
-
-
-
- }
+  }
 }

@@ -25,6 +25,25 @@ public class StudentGrade {
             	System.out.print("scores for subject " + (f + 1) + ": ");
    		scores[i][f] = input.nextInt();
 	}
-     }
-   }
+     
+      }
+	System.out.println("\nStudent Scores: ");
+	for(int i = 0; i < numberOfStudents; i++) {
+		System.out.println("Scores for student " + (i +1) + ":");
+		for(int f = 0; f < numberOfSubjects; f++)  {
+	System.out.println("Subject " + (f + 1) + ":" + scores[i][f]);
+    	System.out.println("==============================================================================================================================================");
+ }
+
+}
+
+
+
+
+
+
+
+
+
+ }
 }

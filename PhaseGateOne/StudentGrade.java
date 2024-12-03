@@ -31,12 +31,20 @@ public class StudentGrade {
 	for(int i = 0; i < numberOfStudents; i++) {
 		System.out.println("Scores for student " + (i +1) + ":");
 		for(int f = 0; f < numberOfSubjects; f++)  {
-	System.out.println("Subject " + (f + 1) + ":" + scores[i][f]);
-    	System.out.println("==============================================================================================================================================");
- }
+		  do {
+		  System.out.print(Scores for student " + (f + 1) + "(0-100): ");   			score = input.nextInt();
+			if(score < 0 && score > 100) {
+			   System.out.println("out of score range!!!");
+		
 
+
+
+    }
+
+}  while (score > 0 && score < 100);
+ 	score[i][f] = score;
+   }
 }
-
 
 
 

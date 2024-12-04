@@ -37,6 +37,17 @@ public class StudentGrade {
    }
    		System.out.println("================================================================================================================================================");
 
+	System.out.println("this is the class summary for lagbaja high school");
+		for (int i = 0; i < numberOfStudents; i++) {
+            int totalScore = 0;
+            System.out.print("Scores for student " + (i + 1) + ": ");
+            for (int f = 0; f < numberOfSubjects; f++) {
+                System.out.print(scores[i][f] + " ");
+                totalScore += scores[i][f];
+            }
+	     float aveScore = (float)  totalScore / numberOfSubjects;
+		System.out.println(" | Total: " + totalScore + " | Average: " + aveScore);
+        }
 
 
 

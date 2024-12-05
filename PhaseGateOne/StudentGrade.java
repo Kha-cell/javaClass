@@ -37,22 +37,28 @@ public class StudentGrade {
    }
    		System.out.println("================================================================================================================================================");
 
-	System.out.println("this is the class summary for lagbaja high school");
-		for (int i = 0; i < numberOfStudents; i++) {
-            int totalScore = 0;
-            System.out.print("Scores for student " + (i + 1) + ": ");
-            for (int f = 0; f < numberOfSubjects; f++) {
-                System.out.print(scores[i][f] + " ");
-                totalScore += scores[i][f];
-            }
-	     float aveScore = (float)  totalScore / numberOfSubjects;
-		System.out.println(" | Total: " + totalScore + " | Average: " + aveScore);
-        }
+	for (int i = 0;i < numberOfSubjects;i++){
+	     System.out.print("\t\t\tsub" + (i + 1));
+}
+	for (int i = 0;i < 1;i++){
+	     System.out.print("\ttotal");
+}
+	for (int i = 0;i < 1;i++){
+	     System.out.print("\t\t\t  average");
+}	System.out.println("\n===============================================================================================================================");
+	
 
+	for (int i = 0; i <  numberOfStudents; i++) {
+            int total = 0;
+		System.out.print("\nstudent" + (i + 1) + ":\t\t");
+            	for (int f = 0; f < numberOfStudents; f++) {
+			System.out.print((scores[i][i]) + " \t\t"); 
+			 total += scores[i][f];     
+ }
+		  float averageScore = (float) total /  numberOfStudents;
+            System.out.println("  Total: " + total + "\t\t  Average: " + averageScore);
+}
+}
 
-
-
-
-
-       }
+	
 }

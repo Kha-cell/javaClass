@@ -1,0 +1,8 @@
+import  random
+
+UserInput = Int(input("guess the summation of two intergers")
+
+count = 1
+
+
+

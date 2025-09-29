@@ -3,6 +3,15 @@ public class  Caculator    {
         return a + b;
 
 
+     public int  multiply(int a,   int b_){
+         return_;
+
+
+        }
+
+
+
+
     }
 
 
